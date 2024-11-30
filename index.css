@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.nav_bar{
+    background-color:#161616;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    position: sticky !important;
+    top: 0 !important;
+    width: auto;
+    opacity: 1000;
+    z-index: 2000;
+}
+
+.nav_ul{
+    
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+    color: #858282;
+    font-size:15px;
+   
+}
+
+.nav_ul:hover{
+    cursor: pointer;
+   
+}
+.nav_main{
+    display: flex;
+    justify-content:center ;
+    gap:30px;
+}
+.nav_item:hover{
+    color: rgb(85, 80, 80);
+    
+}
+.nav_ul3
+{
+display: none;
+}
+.nav_ul1{
+    display: flex;
+    
+    list-style: none;
+    align-items: center;
+     gap: 30px;
+    color: #6b6b6b;
+    font-size:15px;
+}
+
+.dropdwon
+{ 
+    
+    display: none;
+    opacity: 0;
+    position: absolute;
+    transition: .3s ;
+    padding: 40px 50px 100px 50px;
+    min-width: 100%;
+    gap: 40px;
+    top: 50px;
+    background-color:#161616;
+    left:0;
+    color: rgb(212, 205, 205);
+    
+    text-align: left;
+    z-index: 2;
+    
+
+}
+.dropdwon p{
+    font-size: 3rem;
+    color: rgb(85, 81, 81);
+}
+
+.dropdwon li{
+    gap: 20px;
+    padding: 5px;
+    list-style: none;
+    
+}
+
+.dropdwon p li{
+    transition: 3s;
+}
+
+.nav_item:hover .dropdwon{
+    display: block;
+    cursor: pointer;
+    opacity: 1000;
+   
+
+}
+
+.toggle{
+    display: none;
+}
+
+.toggle1,
+.toggle2{
+    display: none;
+}
+/* .nav_drop
+{
+    display: flex;
+    justify-content:center ;
+    gap:30px;
+} */
+
+/* shop nan  */
+.nav_shop
+{
+    background-color:#272626 ;
+    padding: 5px 0 ;
+   
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    
+}
+.nav_shop p{
+    color: #f3efef;
+
+}
+.nav_shop a{
+    color: #366ba0;
+    text-decoration: none;
+
+}
+
+/* 16pro */
+.pro16_main{
+
+    background-color: rebeccapurple;
+
+}
+.pro16 {
+    background-image: url("https://www.apple.com/v/iphone-16-pro/c/images/overview/welcome/hero_endframe__b3cjfkquc2s2_xlarge.jpg");
+    height: 600px; 
+    /* margin-top: -15px !important; */
+    width: 100%; 
+    background-size: cover;
+    /* object-fit:contain;  */
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pro16_content
+{
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 20px; */
+    padding: 40px;
+    
+}
+
+.pro_h1 {
+    position: relative;
+    color: #F5F5F7;
+    font-size: 3rem;
+    font-weight: bold;
+   /* text-shadow: 2px 2px 4px #dfc2a7; */
+    z-index: 1;
+
+}
+.pro16_content .pro_p{
+    position: relative;
+    color: #F5F5F7;
+    font-size: 1.6rem;
+    font-weight: bold;
+   /* text-shadow: 2px 2px 4px #dfc2a7; */
+    z-index: 1;
+}
+
+.pro16_button{
+    position: relative;
+   bottom: 0px;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.pro_button{
+    display: flex;
+    gap: 30px;
+}
+
+.learn{
+    background-color:#0277ED ;
+    color: white;
+    width: auto;
+    /* height: 100px; */
+    font-size: 1.2rem;
+    min-width: 150px;
+    padding: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+
+} 
+.buy{
+    color: #0277ED ;
+    background-color: transparent;
+    border: solid 1px #0277ED;
+    /* min-width: 10px; */
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.buy:hover{
+
+    background-color: #0277ED;
+    color: white;
+    cursor: pointer;
+}
+
+.pro_p{
+    color: #6d6666;
+    padding: 10px;
+}
+
+
+.pro16_creen {
+    background:url("https://www.apple.com/in/iphone-16/images/overview/welcome/hero_endframe__dtznvlokjeeu_medium_2x.png"), linear-gradient(to bottom, #212A6F, #A8B6E4) ;
+    height: 600px; 
+    width: 100%; 
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.mackboo{
+    background:url("./images/mackbook.png");
+    height: 600px; 
+    width: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.mac_p{
+   background: linear-gradient(to right, #138BF7, #E0564C);
+   -webkit-background-clip: text;
+   
+   -webkit-text-fill-color: transparent;
+   font-size: 1.4rem;
+}
+
+/* ipad  */
+
+.main_grid{
+    display: flex;
+    /* grid-template-columns:2fr min-content; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: #cec9c9;
+
+}
+
+.main_sub
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    min-width: 49.5%;
+    height: 550px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
+}
+
+.sub_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    text-align: center;
+    margin-top: 20px;
+    gap: 3px !important;
+
+
+
+}
+.apple{
+    font-size: 1.5rem;
+}
+
+.carousel_main{
+    display: flex;
+    align-items: center;justify-content: center;
+    width: 100%;
+    background-color: #cec9c9;
+}
+
+.slide_carousel{
+    width: 99%;
+}
+
+footer {
+    font-family: SF Pro Text, "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding: 10px 10%;
+    background-color: #FFFFFF;
+}
+
+.footer-content{
+    display: flex;
+   /* background-color: rebeccapurple; */
+   justify-content: space-around;
+   text-align: left;
+   align-items: flex-start;
+}
+.footer-content ul ul li{
+    list-style: none;
+    /* margin-left: 2px; */
+
+    gap: 10px;
+    padding-top: 5px;
+    padding-left: 0px;
+    /* text-align: left; */
+    margin-left: 0px;
+
+}
+.footer-content ul
+{
+    display: flex;
+    flex-direction: column;
+   
+    /* text-align: left; */
+    justify-content: flex-start;
+    margin-left: 0px;
+
+}
+.footer-content ul a{
+    text-decoration: none;
+    /* color: #cec9c9; */
+    color: rgb(63, 62, 62);
+   
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright a{
+    text-decoration: none;
+    color:rgb(63, 62, 62) ;
+
+}
+@media screen and (max-width:851px) {
+    
+    
+    .nav_drop
+    {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #161616;
+        top:40px;
+        width: 100%;
+        left: -1px;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 20px 0;
+        transition: 3s;
+        gap: 5px;
+        
+        
+    }
+    .nav_drop > li{
+       /* text-align: center; */
+       /* background-color: #fff; */
+       width: 100%;
+       /* margin-left: 200px; */
+       /* padding-left: 200px; */
+       margin-left: 200px;
+       text-align: left;
+       padding: 10px;
+    }
+
+    .dropdwon li  p{
+        /* background-color: #fff; */
+        text-align: left;
+    }
+
+.nav_ul3
+{
+    display: flex;
+    
+    list-style: none;
+    align-items: center;
+     gap: 30px;
+    color: #6b6b6b;
+    font-size:15px;
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    right: 8%;
+}
+
+
+    .nav_main
+    {
+        justify-content: space-between;
+    }
+
+    .toggle{
+        display: block;
+       
+    }
+    .toggle1
+    {
+        display:block;
+        color: rgb(138, 131, 131);
+        cursor: pointer;
+    }
+
+    .nav_ul2{
+        display: none;
+
+        
+    }
+
+
+    #check:checked ~ .toggle2{
+        display: block;
+        color: rgb(138, 131, 131);
+        cursor: pointer;
+    }
+    #check:checked ~ .toggle1{
+        display: none;
+    
+    }
+    #check:checked ~ .nav_drop {
+        display: flex; /* or block */
+    }
+    
+
+  
+}
+
+.custome_color{
+    background-color:#f7fafb ;
+    /* color: white; */
+    width: auto;
+    /* height: 100px; */
+    font-size: 1.2rem;
+    min-width: 150px;
+    padding: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.custome_color:hover{
+    background-color:#f7fafb ;
+    color: black;
+    width: auto;
+    /* height: 100px; */
+    font-size: 1.2rem;
+    min-width: 150px;
+    padding: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:675px) {
+
+   .pro16{
+    background-image: url("./images/v16pro.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 800px;
+   }
+   .pro16_creen{
+    /* transform: rotate(140deg); */
+
+    background:url("./images/creen_phone.png"), linear-gradient(to bottom, #212A6F, #A8B6E4) ;
+
+
+    width: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+
+   .pro16_content h2{
+    font-size: 1.5rem;
+   }
+   
+   .pro16_content p{
+    font-size: 1rem;
+   
+   }
+   
+    
+}
+
+
+@media screen and (max-width:880px) {
+    .carousel_min{
+        display: flex  !important;
+        /* flex-direction: wrap !important; */
+
+        flex-wrap: wrap !important;
+        /* position: fixed; */
+        /* background-color: rebeccapurple !important; */
+    }
+    
+    .carousel-item{
+        height: 500px;
+        
+       }
+       .carousel-item img{
+        height: 100%;
+       }
+}
+
+
+@media screen and (max-width:602px) {
+    
+    .dropdwons
+    {
+        display: none  !important;
+        /* background-color: rebeccapurple; */
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column !important;
+
+    }
+    .content_ul:hover .dropdwons{
+        display: flex !important; 
+        flex-direction: column;
+    cursor: pointer;
+
+    opacity: 1000;
+
+    }
+
+    
+}
+
+@media screen and (max-width:1008px) {
+
+
+.main_sub{
+    min-width: 99%;
+}
+
+
+
+
+    
+}
+
+
+
